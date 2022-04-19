@@ -27,3 +27,30 @@ submitButton.addEventListener('click', function(e)
 	
 })
 
+function addMyFavoriteBook(nameofBook) {
+	// 
+	if (!nameofBook.includes("win")){
+		favoriteBooks.push(nameofBook);
+		
+	}
+	
+  }
+  
+  function printFavoriteBooks(){
+	  console.log(`Favorite Books: ${favoriteBooks.length}`);
+	  for (let nameofBook of favoriteBooks) {
+		  console.log(nameofBook);
+	  }
+	  
+  }
+ var favoriteBooks = [];
+
+addMyFavoriteBook("Winners will never quit and quitters will never win");
+addMyFavoriteBook("You can win");
+addMyFavoriteBook("5 habits of winners");
+addMyFavoriteBook("Secrets");
+addMyFavoriteBook("Power of your thought");
+addMyFavoriteBook("An autobiography of a yogi");
+
+printFavoriteBooks();
+
