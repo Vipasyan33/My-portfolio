@@ -3,7 +3,7 @@
 // document.write("Hello "+ username);
 
 var myname = "Vipasyan Telaprolu";
-document.write("Made By "+ myname);
+document.write("Made by "+ myname);
 
 let emailElement = document.querySelector('#email');
 let messageElement= document.querySelector('#message');
