@@ -88,6 +88,10 @@ h2 {
 .i-am {
 	text-align: center;
 }
+.i-like {
+	text-align: center;
+}
+
 
 .about-list{
 	list-style: none;
@@ -104,18 +108,31 @@ h2 {
 	text-align: center;
 }
 
+.content-project-image-wrapper {
+    text-align: justify-self;
+	padding:4%;
+	position:relative;
+	 width: [width of img];
+	
+}
 
 
 .project-image-wrapper {
 	justify-self: center;
 	padding:4%;
 	position:relative;
+	
 }
+
+
+
+
+
 
 .project-image {
 	border-radius: 5px;
 	box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
-	transition: all ease-in-out .2%
+	transition: all ease-in-out .2%;
 	
 }
 
@@ -131,14 +148,17 @@ h2 {
 
 .project-image-wrapper >h3 {
 	position: absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%, -50%);
+	top:30%;
+	left:30%;
+	right:30%;
+	transform: translate(-40%, -50%, -50%);
 	color: white;
 	visibility:hidden;
 	z-index: 2;
 	transition: all ease-in-out .2%;
+	
 }
+
 
 .socialmedia{
 	height: 40px;
@@ -150,7 +170,7 @@ h2 {
 
 .projects-grid{
 	display: grid;
-	grid-template-columns:50% 50%;
+	grid-template-columns:40% 40% 40%;
 }
 
 @media (max-width: 650px) {
