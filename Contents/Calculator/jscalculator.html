@@ -9,26 +9,29 @@ border-radius: 10px;
 background-color:grey;
 color: white;
 border-color:#black ;
-width:100%;
+width:50px;
+height: 40px;
 }
 input[type="text"]
 {
-border-radius: 9px;
+border-radius: 12px;
 text-align: right;
+font-size: 21px;  
 background-color:white;
 color: black;
 border-color: white;
-width:96%
+width:220px;
+height: 50px;
 }
 </style>
 
  </head>
 <body>
 <div class = title > Calculator</div>
-<table border="10">
+<table border="20">
 <tr>
 
-<td colspan="3"><input type="text" id="result"/></td>
+<td colspan="4"><input type="text" id="result"/></td>
 <td><input type="button" value="C" onclick="clr()"/> </td>
 </tr>
 
@@ -41,6 +44,7 @@ width:96%
 <td><input type="button" value="8" onclick="display('8')"/> </td>
 <td><input type="button" value="9" onclick="display('9')"/> </td>
 <td><input type="button" value="*" onclick="display('*')"/> </td>
+<td><input type="button" value="%" onclick="display('%')"/> </td>
 </tr>
 
 <tr>
@@ -49,6 +53,7 @@ width:96%
 <td><input type="button" value="5" onclick="display('5')"/> </td>
 <td><input type="button" value="6" onclick="display('6')"/> </td>
 <td><input type="button" value="-" onclick="display('-')"/> </td>
+<td><input type="button" value="(" onclick="display('(')"/> </td>
 </tr>
 
 <tr>
@@ -57,12 +62,14 @@ width:96%
 <td><input type="button" value="2" onclick="display('2')"/> </td>
 <td><input type="button" value="3" onclick="display('3')"/> </td>
 <td><input type="button" value="+" onclick="display('+')"/> </td>
+<td><input type="button" value=")" onclick="display(')')"/> </td>
 
 
 </tr>
 <tr>
 <td><input type="button" value="0" onclick="display('0')"/> </td>
 <td><input type="button" value="." onclick="display('.')"/> </td>
+<td><input type="button" value="," onclick="display(',')"/> </td>
 <td><input type="button" value="/" onclick="display('/')"/> </td>
 <td><input type="button" value="=" onclick="solve()"/> </td> 
 
